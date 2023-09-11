@@ -1,0 +1,85 @@
+/* Global */
+
+:root {
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --secondary-font: 'Nanum Myeongjo', serif;
+    --tertiary-font: 'Sofia Sans', sans-serif;
+}
+body {
+    font-family: var(--primary-font);
+}
+main {
+    overflow: hidden;
+    min-height: 100vh;
+    margin-top: 3.5rem;
+}
+
+/* Sections */
+
+section {
+    min-height: 400px;
+}
+section h2 {
+    font-family: var(--secondary-font);
+}
+section h2 span {
+    font-weight: bold;
+}
+section p  {
+    font-family: var(--primary-font);
+}
+section div.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 426px) {
+    section h2 {
+        font-size: 24px;
+    }
+    section img {
+        padding: 2rem 0;
+    }
+}
+
+/* First Section */
+
+html[data-bs-theme="dark"] section.first {
+    background: linear-gradient(183deg, rgba(52,39,51,1) 0%, rgba(33,37,41,1) 100%);
+}
+
+html[data-bs-theme="light"] section.first {
+    background: linear-gradient(183deg, rgba(253,220,222,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+/* Welcome Section */
+
+html[data-bs-theme="light"] section.welcome-section {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("../img/welcome.png");;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.welcome-section {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/welcome.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.welcome-section h1,
+section.welcome-section h2  {
+    font-family: var(--secondary-font);
+}
+section.welcome-section p  {
+    font-family: var(--primary-font);
+}
