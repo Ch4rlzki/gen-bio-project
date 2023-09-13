@@ -1,6 +1,16 @@
 const scrollAnimations = document.querySelectorAll("[is-scroll='true']");
+const firstSection = document.getElementsByClassName("first")[0];
+const navBar = document.getElementsByClassName("navbar")[0];
 
 window.addEventListener("scroll", () => {
+    const firstSecRect = firstSection.getBoundingClientRect().top;
+
+    if (firstSecRect <= 54) {
+        navBar.classList.add("first-sec");
+    } else {
+        navBar.classList.remove("first-sec");
+    }
+
     Array.from(scrollAnimations).forEach((element) => {
         const rect = element.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
