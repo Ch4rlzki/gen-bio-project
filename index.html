@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light">
+<html data-bs-theme="dark">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="./assets/css/main.css" rel="stylesheet">
 </head>
-<body>
+<body load-animation="fade-in">
     <header>
         <nav class="navbar navbar-expand-lg bg-body fixed-top">
             <div class="container">
@@ -26,11 +26,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
         
-                <div class="collapse navbar-collapse d-lg-flex" id="navBar">
-                    <a class="navbar-brand col-lg-3 me-0">GROUP 3 GENERAL BIOLOGY</a>
-                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                <div class="collapse navbar-collapse" id="navBar">
+                    <a class="navbar-brand col-3">GROUP 3 GENERAL BIOLOGY</a>
+                    <ul class="navbar-nav col-9 justify-content-lg-end">
                         <li class="nav-item">
-                            <a class="nav-link active">Link 1</a>
+                            <a class="nav-link" href="#">Cell Membrane</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Link 2</a>
@@ -39,7 +39,6 @@
                             <a class="nav-link">Link 3</a>
                         </li>
                     </ul>
-                    <div class="d-lg-flex col-lg-3 justify-content-lg-end"></div>
                 </div>
             </div>
         </nav>
@@ -50,12 +49,16 @@
             <div class="container">
                 <h1 class="mb-3 fw-bold">Welcome to The World of Animal Cells</h1>
                 <h2 class="container mb-3">Unlocking the Mysteries of Cellular Life</h2>
-                <div class="container">
+                <div class="container mb-3">
                     <p>Welcome to our fascinating journey into the intricate world of animal cells. Delve deep into the building blocks of life as we explore the diverse organelles that make up these remarkable entities. From the protective cell membrane to the energy-producing mitochondria, we invite you to discover the wonders hidden within the microscopic realm.</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <button class="btn bg-body" onclick="changeTheme('dark')">Dark Mode</button>
+                    <button class="btn bg-body" onclick="changeTheme('light')">Light Mode</button>
                 </div>
             </div>
         </section>
-        <section class="first">
+        <section class="first fade-right" is-scroll="true" id="cell-membrane">
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row py-5">
                     <div class="col-md flex">
@@ -65,20 +68,20 @@
                         <div>
                             <h2 class="mb-3">Cell Membrane <span>The Guardian of Life</span></h2>
                             <p>A thin, semipermeable membrane of lipids and proteins, the cell membrane stands as the cell's first line of defense. Its primary role is to safeguard the cell from its surroundings while regulating the passage of essential nutrients and microscopic entities.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <button class="btn bg-body-tertiary">Learn more</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bg-body-tertiary">
+        <section class="bg-body-tertiary fade-left" is-scroll="true" id="nucleus">
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row py-5">
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Nucleus <span>The Control Center</span></h2>
                             <p>The nucleus, housing sub-organelles like the nucleolus, nucleosomes, and chromatins, holds the cell's genetic blueprint. It's the command center where critical cellular decisions are made.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <button class="btn bg-body-tertiary">Learn more</button>
                         </div>
                     </div>
                     <div class="col-md flex">
@@ -89,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-body-secondary">
+        <section class="bg-body-secondary fade-right" is-scroll="true" id="nuclear-membrane">
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row py-5">
                     <div class="col-md flex">
@@ -99,13 +102,13 @@
                         <div>
                             <h2 class="mb-3">Nuclear Membrane <span>Guardian of the Nucleus</span></h2>
                             <p>Surrounding the nucleus is the double-membrane structure known as the nuclear membrane or nuclear envelope, ensuring the protection and integrity of the nucleus.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <button class="btn bg-body-tertiary">Learn more</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bg-body-tertiary">
+        <section class="bg-body-tertiary fade-left" is-scroll="true" id="centrosome">
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="row py-5">
                     <div class="col-md flex">
@@ -123,8 +126,139 @@
                 </div>
             </div>
         </section>
+        <section class="bg-body-secondary fade-right" is-scroll="true" id="cytoplasm">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row py-5">
+                    <div class="col-md flex">
+                        <img class="img-fluid" src="./assets/img/cytoplasm.png">
+                    </div>
+                    <div class="col-md flex">
+                        <div>
+                            <h2 class="mb-3">Cytoplasm <span>The Cellular Hub</span></h2>
+                            <p>A gel-like substance containing all organelles, cytoplasm houses the nucleus within the nuclear membrane, with the nucleoplasm holding genetic materials.</p>
+                            <button class="btn bg-body-tertiary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary fade-left" is-scroll="true" id="golgi-apparatus">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row py-5">
+                    <div class="col-md flex">
+                        <div>
+                            <h2 class="mb-3">Golgi Apparatus <span>The Cellular Manager</span></h2>
+                            <p>Located near the nucleus, this sac-like organelle, the Golgi apparatus, manages the manufacturing, storage, packing, and transportation of vital particles within the cell.</p>
+                            <button class="btn bg-body">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="col-md flex">
+                        <div class="col-md flex">
+                            <img class="img-fluid" src="./assets/img/golgi-apparatus.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-secondary fade-right" is-scroll="true" id="mitchondrion">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row py-5">
+                    <div class="col-md flex">
+                        <img class="img-fluid" src="./assets/img/mitchondrion.png">
+                    </div>
+                    <div class="col-md flex">
+                        <div>
+                            <h2 class="mb-3">Mitochondrion <span>The Powerhouse</span></h2>
+                            <p>Spherical or rod-shaped with a double membrane, mitochondria are the energy generators of the cell, responsible for energy release.</p>
+                            <button class="btn bg-body-tertiary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary fade-left" is-scroll="true" id="ribosome">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row py-5">
+                    <div class="col-md flex">
+                        <div>
+                            <h2 class="mb-3">Ribosome <span>Protein Factories</span></h2>
+                            <p>Tiny RNA-rich organelles, ribosomes are the sites where proteins are synthesized, essential for various cellular functions.</p>
+                            <button class="btn bg-body">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="col-md flex">
+                        <div class="col-md flex">
+                            <img class="img-fluid" src="./assets/img/ribosome.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-secondary fade-right" is-scroll="true" id="endoplasmic">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row py-5">
+                    <div class="col-md flex">
+                        <img class="img-fluid" src="./assets/img/endoplasmic.png">
+                    </div>
+                    <div class="col-md flex">
+                        <div>
+                            <h2 class="mb-3">Endoplasmic Reticulum (ER) <span>The Cellular Network</span></h2>
+                            <p>Originating from the nucleus, the ER forms a network of membranous sacs crucial for protein and lipid synthesis.</p>
+                            <button class="btn bg-body-tertiary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary fade-left" is-scroll="true" id="vacoule">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row py-5">
+                    <div class="col-md flex">
+                        <div>
+                            <h2 class="mb-3">Vacuole <span>The Cellular Storage Unit</span></h2>
+                            <p>A membrane-bound organelle, the vacuole, maintains cell shape and stores water, food, and waste materials.</p>
+                            <button class="btn bg-body">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="col-md flex">
+                        <div class="col-md flex">
+                            <img class="img-fluid" src="./assets/img/vacuole.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-secondary fade-right" is-scroll="true" id="nucleopore">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row py-5">
+                    <div class="col-md flex">
+                        <img class="img-fluid" src="./assets/img/nucleopore.png">
+                    </div>
+                    <div class="col-md flex">
+                        <div>
+                            <h2 class="mb-3">Nucleopore <span>Gateways to Genetic Information</span></h2>
+                            <p>Tiny holes in the nuclear membrane, nucleopores facilitate the movement of nucleic acids and proteins in and out of the nucleus.</p>
+                            <button class="btn bg-body-tertiary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="bg-body">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <p>Join us on this educational journey to uncover the inner workings of animal cells. Each organelle plays a unique role, contributing to the intricate dance of life. Dive deeper into our website to explore these organelles in detail and enhance your understanding of the remarkable world of animal cells.</p>
+                </div>
+                <div class="col">
+                    <button class="btn bg-body-secondary">Go to top</button>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

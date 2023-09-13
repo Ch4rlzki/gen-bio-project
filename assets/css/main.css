@@ -7,6 +7,7 @@
 }
 body {
     font-family: var(--primary-font);
+    scroll-behavior: smooth;
 }
 main {
     overflow: hidden;
@@ -17,7 +18,7 @@ main {
 /* Sections */
 
 section {
-    min-height: 400px;
+    min-height: 200px;
 }
 section h2 {
     font-family: var(--secondary-font);
@@ -82,4 +83,61 @@ section.welcome-section h2  {
 }
 section.welcome-section p  {
     font-family: var(--primary-font);
+}
+
+/* Animations */
+
+[is-scroll="true"].fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-in-out;
+}
+
+[is-scroll="true"].fade-right.active {
+    opacity: 100%;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+[is-scroll="true"].fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-in-out;
+}
+
+[is-scroll="true"].fade-left.active {
+    opacity: 100%;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+[is-scroll="true"].fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+}
+
+[is-scroll="true"].fade-up.active {
+    opacity: 100%;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+
+[load-animation="fade-in"] {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+/* Footer */
+
+footer {
+    min-height: 100px;
 }
