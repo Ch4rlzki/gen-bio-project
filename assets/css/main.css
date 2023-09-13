@@ -24,7 +24,11 @@ section h2 {
     font-family: var(--secondary-font);
 }
 section h2 span {
-    font-weight: bold;
+    font-size: large;
+    text-transform: capitalize;
+}
+section h2 span::before {
+    content: " ━ "
 }
 section p  {
     font-family: var(--primary-font);
@@ -44,28 +48,7 @@ section div.flex {
     }
 }
 
-/* First Section */
-
-html[data-bs-theme="dark"] section.first {
-    background: linear-gradient(183deg, rgba(52,39,51,1) 0%, rgba(33,37,41,1) 100%);
-}
-
-html[data-bs-theme="light"] section.first {
-    background: linear-gradient(183deg, rgba(253,220,222,1) 0%, rgba(255,255,255,1) 100%);
-}
-
 /* Welcome Section */
-
-html[data-bs-theme="light"] section.welcome-section {
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("../img/welcome.png");;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 section.welcome-section {
     min-height: 500px;
@@ -77,12 +60,21 @@ section.welcome-section {
     background-repeat: no-repeat;
     background-size: cover;
 }
-section.welcome-section h1,
-section.welcome-section h2  {
+section.welcome-section h1  {
     font-family: var(--secondary-font);
 }
 section.welcome-section p  {
     font-family: var(--primary-font);
+}
+section.welcome-section ul {
+    list-style: none;
+}
+
+/* First Section */
+
+.first {
+    background: rgb(87,49,53);
+    background: linear-gradient(180deg, rgba(87,49,53,1) 0%, rgba(33,37,41,1) 100%);
 }
 
 /* Animations */
@@ -139,5 +131,19 @@ section.welcome-section p  {
 /* Footer */
 
 footer {
+    background: rgb(87,49,53);
+    background: linear-gradient(0deg, rgba(87,49,53,1) 0%, rgba(33,37,41,1) 100%);
     min-height: 100px;
+}
+
+/* Navbar */
+
+nav.navbar hr {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    nav.navbar hr {
+        display: block;
+    }
 }

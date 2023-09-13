@@ -21,9 +21,10 @@ function changeTheme(theme) {
     }
 }
 
-function goToView(id) {
+function scrollInto(id) {
     const yOffset = -50;
-    const elementY = document.getElementById(id).getBoundingClientRect().top + yOffset;
+    const element = document.getElementById(id);
+    const elementY = element.getBoundingClientRect().top + yOffset;
 
     window.scroll({
         top: elementY,
