@@ -41,3 +41,13 @@ function scrollInto(id) {
         behavior: "smooth"
     });
 }
+
+const arrow = document.getElementById("arrow");
+
+arrow.addEventListener("click", (e) => {
+    scrollInto("cell-membrane");
+});
+
+function learnMore() {
+    window.location.href = "./analogies.html";
+}

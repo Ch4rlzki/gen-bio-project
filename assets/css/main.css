@@ -27,8 +27,8 @@ main {
 /* Navbar */
 
 nav.navbar.on-top {
-    background: rgb(19,35,51); 
-    background: linear-gradient(0deg, rgba(19,35,51,1) 0%, rgba(4,7,11,1) 100%);
+    background: rgb(23,62,82);
+    background: linear-gradient(0deg, rgba(23,62,82,1) 0%, rgba(52,58,64,1) 100%);
 }
 
 nav.navbar.on-top.first-sec {
@@ -106,8 +106,21 @@ section.welcome-section ul {
 /* First Section */
 
 .first {
-    background: rgb(87,49,53);
-    background: linear-gradient(180deg, rgba(87,49,53,1) 0%, rgba(33,37,41,1) 100%);
+    background: rgb(19, 41, 52);
+    background: linear-gradient(180deg, rgba(19, 41, 52, 1) 0%, rgba(52, 58, 64, 1) 100%);
+}
+.first img#arrow {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+.first img#arrow:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+.first img#arrow:active {
+    transform: scale(1.0);
+    transition: transform 0.2s ease-in-out;
 }
 
 /* Animations */
@@ -139,13 +152,13 @@ section.welcome-section ul {
 [is-scroll="true"].fade-up {
     opacity: 0;
     transform: translateY(50px);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 [is-scroll="true"].fade-up.active {
     opacity: 100%;
     transform: translateY(0);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 [load-animation="fade-in"] {
@@ -164,7 +177,13 @@ section.welcome-section ul {
 /* Footer */
 
 footer {
-    background: rgb(87,49,53);
-    background: linear-gradient(0deg, rgba(87,49,53,1) 0%, rgba(33,37,41,1) 100%);
+    background: rgb(19, 41, 52);
+    background: linear-gradient(0deg, rgba(19, 41, 52, 1) 0%, rgba(52, 58, 64, 1) 100%);
     min-height: 100px;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }

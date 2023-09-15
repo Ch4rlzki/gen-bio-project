@@ -50,33 +50,31 @@
     <main load-animation="fade-in">
         <section class="welcome-section py-5">
             <div class="container">
-                <h1 class="mb-3 fw-bold">Welcome to The World of Animal Cells</h1>
-                <div class="container mb-3">
-                    <h2>Unlocking the Mysteries of Cellular Life</h2>
-                    <p>Welcome to our fascinating journey into the intricate world of animal cells. Delve deep into the building blocks of life as we explore the diverse organelles that make up these remarkable entities. From the protective cell membrane to the energy-producing mitochondria, we invite you to discover the wonders hidden within the microscopic realm.</p>
-                </div>
-                <h2 class="mb-3">Organelles</h2>
-                <div class="container mb-3">
-                    <a onclick="scrollInto('cell-membrane')" href="#">Cell Membrane</a>,
-                    <a onclick="scrollInto('nucleus')" href="#">Nucleus</a>,
-                    <a onclick="scrollInto('nuclear-membrane')" href="#">Nuclear Membrane</a>,
-                    <a onclick="scrollInto('centrosome')" href="#">Centrosome</a>,
-                    <a onclick="scrollInto('cytoplasm')" href="#">Cytoplasm</a>,
-                    <a onclick="scrollInto('golgi-apparatus')" href="#">Golgi Apparatus</a>,
-                    <a onclick="scrollInto('mitochondrion')" href="#">Mitochondrion</a>,
-                    <a onclick="scrollInto('ribosome')" href="#">Ribosome</a>,
-                    <a onclick="scrollInto('endoplasmic')" href="#">Endoplasmic Reticulum (ER)</a>,
-                    <a onclick="scrollInto('vacuole')" href="#">Vacuole</a>,
-                    <a onclick="scrollInto('nucleopore')" href="#">Nucleopore</a>,
-                    <a onclick="scrollInto('peroxisomes')" href="#">Peroxisomes</a>,
-                    <a onclick="scrollInto('cytoskeleton')" href="#">Cytoskeleton</a>.
+                <h1 class="mb-3 fw-bold">Real Life Analogy of Each Organelles</h1>
+                <div class="container">
+                    <h2 class="mb-3">Organelles</h2>
+                    <div class="container mb-3">
+                        <a onclick="scrollInto('cell-membrane')" href="#">Cell Membrane</a>,
+                        <a onclick="scrollInto('nucleus')" href="#">Nucleus</a>,
+                        <a onclick="scrollInto('nuclear-membrane')" href="#">Nuclear Membrane</a>,
+                        <a onclick="scrollInto('centrosome')" href="#">Centrosome</a>,
+                        <a onclick="scrollInto('cytoplasm')" href="#">Cytoplasm</a>,
+                        <a onclick="scrollInto('golgi-apparatus')" href="#">Golgi Apparatus</a>,
+                        <a onclick="scrollInto('mitochondrion')" href="#">Mitochondrion</a>,
+                        <a onclick="scrollInto('ribosome')" href="#">Ribosome</a>,
+                        <a onclick="scrollInto('endoplasmic')" href="#">Endoplasmic Reticulum (ER)</a>,
+                        <a onclick="scrollInto('vacuole')" href="#">Vacuole</a>,
+                        <a onclick="scrollInto('nucleopore')" href="#">Nucleopore</a>,
+                        <a onclick="scrollInto('peroxisomes')" href="#">Peroxisomes</a>,
+                        <a onclick="scrollInto('cytoskeleton')" href="#">Cytoskeleton</a>.
+                    </div>
                 </div>
             </div>
         </section>
         <div class="first py-5">
-            <p class="display-3 text-center">Getting Started.</p>
+            <p class="display-3 text-center">Getting Started</p>
             <div class="d-flex justify-content-center">
-                <img style="max-width: 20%;" src="./assets/img/down-arrow.png">
+                <img style="max-width: 20%;" src="./assets/img/down-arrow.png" id="arrow">
             </div>
             <section class="fade-up" is-scroll="true" id="cell-membrane">
                 <div class="container d-flex justify-content-center align-items-center">
@@ -87,8 +85,10 @@
                         <div class="col-md flex">
                             <div>
                                 <h2 class="mb-3">Cell Membrane<span> The Guardian of Life</span></h2>
-                                <p>A thin, semipermeable membrane of lipids and proteins, the cell membrane stands as the cell's first line of defense. Its primary role is to safeguard the cell from its surroundings while regulating the passage of essential nutrients and microscopic entities.</p>
-                                <button class="btn bg-body-tertiary">Learn more</button>
+                                <div class="container mb-3">
+                                    <h3>Real Life Analogy</h3>
+                                    <p class="container">The Cell Membrane is like the hospital's outer walls and doors. There are employee access doors where only empolyees can enter.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,8 +101,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Nucleus<span>The Control Center</span></h2>
-                            <p>The nucleus, housing sub-organelles like the nucleolus, nucleosomes, and chromatins, holds the cell's genetic blueprint. It's the command center where critical cellular decisions are made.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">Headquarters, The nucleus of a cell controls the operations of a cell. In a similar manner, factory headquarters controls the operations of a factory.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md flex">
@@ -122,8 +124,15 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Nuclear Membrane<span>Guardian of the Nucleus</span></h2>
-                            <p>Surrounding the nucleus is the double-membrane structure known as the nuclear membrane or nuclear envelope, ensuring the protection and integrity of the nucleus.</p>
-                            <button class="btn bg-body-tertiary">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The nuclear membrane is like a hall monitor who controls traffic in the halls.</p>
+                                <h3>Parts</h3>
+                                <div class="container">
+                                    <p><b>Outer Membrane: </b>It is a lipid bilayer containing two layers of molecules of lipid. The outer layer is made up of lipids which have ribosomes on the surface that are linked to the endoplasmic reticulum.</p>
+                                    <p><b>Inner Membrane: </b>It contains proteins that rearrange the nucleus and chain the genetic material in position. The nuclear lamina is the attachment of proteins and fibres that are linked to the inner membrane. It provides structural support to the nucleus, assists in DNA repair, controls cell cycle events such as cell division and also on DNA replication.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,8 +144,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Centrosome<span>The Microtubule Producer</span></h2>
-                            <p>Near the nucleus, the centrosome with its radiating tubules is where microtubules are manufactured, contributing to cell structure and division.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The centrosome can be thought of like a shipping box being delivered to your door. The shipping box is like the centrosome. Inside the box are two presents, the centrioles.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md flex">
@@ -156,8 +167,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Cytoplasm<span>The Cellular Hub</span></h2>
-                            <p>A gel-like substance containing all organelles, cytoplasm houses the nucleus within the nuclear membrane, with the nucleoplasm holding genetic materials.</p>
-                            <button class="btn bg-body-tertiary">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The cytoplasm is analogous to the circulatory system in the body.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,8 +182,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Golgi Apparatus<span>The Cellular Manager</span></h2>
-                            <p>Located near the nucleus, this sac-like organelle, the Golgi apparatus, manages the manufacturing, storage, packing, and transportation of vital particles within the cell.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The Golgi apparatus is like a post office, because the whole point of a post office is to package and deliver things.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md flex">
@@ -190,8 +205,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Mitochondrion<span>The Powerhouse</span></h2>
-                            <p>Spherical or rod-shaped with a double membrane, mitochondria are the energy generators of the cell, responsible for energy release.</p>
-                            <button class="btn bg-body-tertiary">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">if a cell is a car, then the mitochondria is its engine which is required to provide the car with energy to function.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -203,8 +220,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Ribosome<span>Protein Factories</span></h2>
-                            <p>Tiny RNA-rich organelles, ribosomes are the sites where proteins are synthesized, essential for various cellular functions.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The ribosomes in a cell are like the kitchen in a house. In the kitchen, meals are cooked and prepared. It is similar to ribosomes using amino acids to make proteins. A cell's vacuole can be compared to a refrigerator.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md flex">
@@ -224,8 +243,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Endoplasmic Reticulum (ER)<span>The Cellular Network</span></h2>
-                            <p>Originating from the nucleus, the ER forms a network of membranous sacs crucial for protein and lipid synthesis.</p>
-                            <button class="btn bg-body-tertiary">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The endoplasmic reticulum is like a road way in the cell. The endoplasmic reticulum is like a freeway, because it gets people from place to place.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,8 +258,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Vacuole<span>The Cellular Storage Unit</span></h2>
-                            <p>A membrane-bound organelle, the vacuole, maintains cell shape and stores water, food, and waste materials.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">Vacuole, 'waste basket'. It stores the waste products, like unwanted lipids and proteins, created from various cellular processes.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md flex">
@@ -258,8 +281,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Nucleopore<span>Gateways to Genetic Information</span></h2>
-                            <p>Tiny holes in the nuclear membrane, nucleopores facilitate the movement of nucleic acids and proteins in and out of the nucleus.</p>
-                            <button class="btn bg-body-tertiary">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The nucleopore operates rather like a turnstile or ticket gate. Those entering the event area will need a ticket to operate the stile or gate. Small items can be passed through the turnstile but people with large items need special facilities.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -271,8 +296,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Peroxisomes<span>The Recycling Plant</span></h2>
-                            <p>Peroxisomes are specialized for carrying out oxidative reactions using molecular oxygen. They generate hydrogen peroxide, which they use for oxidative purpose destroying the excess by means of the catalase they contain.</p>
-                            <button class="btn bg-body">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">peroxisome, it is similar to a recycling plant. In a recycling plant, old or unwanted materials are cleaned and repurposed into new material.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md flex">
@@ -292,8 +319,10 @@
                     <div class="col-md flex">
                         <div>
                             <h2 class="mb-3">Cytoskeleton<span>Beams Of A House</span></h2>
-                            <p>The cytoskeleton is a structure that helps cells maintain their shape and internal organization, and it also provides mechanical support that enables cells to carry out essential functions like division and movement.</p>
-                            <button class="btn bg-body-tertiary">Learn more</button>
+                            <div class="container mb-3">
+                                <h3>Real Life Analogy</h3>
+                                <p class="container">The cytoskeleton is a structure that helps cells maintain their shape and internal organization, and it also provides mechanical support that enables cells to carry out essential functions like division and movement.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -305,7 +334,7 @@
             <div class="row">
                 <div class="col-lg-9">
                     <h3>Our Website</h3>
-                    <p class="container">━ Join us on this educational journey to uncover the inner workings of animal cells. Each organelle plays a unique role, contributing to the intricate dance of life. Dive deeper into our website to explore these organelles in detail and enhance your understanding of the remarkable world of animal cells.</p>
+                    <p class="container">Join us on this educational journey to uncover the inner workings of animal cells. Each organelle plays a unique role, contributing to the intricate dance of life. Dive deeper into our website to explore these organelles in detail and enhance your understanding of the remarkable world of animal cells.</p>
                 </div>
                 <div class="col-lg-3">
                     <h3>Members</h3>
